@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+## About this app
+<p>A simple REACT app with CRUD operations. The state is managed with Context API.</p>
+
+## Screenshots
+<img src="https://raw.githubusercontent.com/smishra0722/assignment-build/master/screenshots/Screenshot%202021-02-12%20095110.png">
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
