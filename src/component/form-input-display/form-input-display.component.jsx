@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './form-inut.styles.scss';
+import './form-input-display.styles.scss';
 import {ContextConsumer} from '../context-api/context-api';
 import { Form } from '../form/form.component';
 

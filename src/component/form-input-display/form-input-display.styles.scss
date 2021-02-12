@@ -14,6 +14,7 @@
         border: 1px solid blue;
         padding: 1rem;
         border-radius: .3rem;
+        overflow: auto;
     
         .display-input-header, .display-input-items {
             display: grid;
