@@ -11,7 +11,7 @@ export class ContextProvider extends Component {
         lastName: '', 
         qualification: '',
         dateOfBirth: '', 
-        martialStatus: '', 
+        maritalStatus: '', 
         selectedRadio: '',
     }
 
@@ -35,21 +35,21 @@ export class ContextProvider extends Component {
     }
     editInput = (id_) => {
         // displays the value of row into the form field when edit button is clicked
-        const {id, firstName, lastName, qualification, dateOfBirth, martialStatus, selectedRadio} = this.findInput(id_);
-        this.setState({id, firstName, lastName, qualification, dateOfBirth, martialStatus, selectedRadio});
+        const {id, firstName, lastName, qualification, dateOfBirth, maritalStatus, selectedRadio} = this.findInput(id_);
+        this.setState({id, firstName, lastName, qualification, dateOfBirth, maritalStatus, selectedRadio});
     }
     handleSubmit = (id_) => {
-        const {id, firstName, lastName, qualification, dateOfBirth, martialStatus, selectedRadio} = this.state;
+        const {id, firstName, lastName, qualification, dateOfBirth, maritalStatus, selectedRadio} = this.state;
         const data = this.state.AllData;
         if(id_) {
             //replaces the existing object data with updated one
             const index = data.findIndex(input => input.id === id_);
-            const updatedData =  {id, firstName, lastName, qualification, dateOfBirth, martialStatus, selectedRadio};
+            const updatedData =  {id, firstName, lastName, qualification, dateOfBirth, maritalStatus, selectedRadio};
             data.splice(index, 1, updatedData);
-            this.setState({AllData: [...data], id: '', firstName:'', lastName:'', qualification:'', dateOfBirth:'', martialStatus:'', selectedRadio:''});
+            this.setState({AllData: [...data], id: '', firstName:'', lastName:'', qualification:'', dateOfBirth:'', maritalStatus:'', selectedRadio:''});
         } else {
             // adds new row field
-            this.setState({AllData: [{id: Math.floor(Math.random()*1000), firstName, lastName, qualification, dateOfBirth, martialStatus, selectedRadio},...data]})
+            this.setState({AllData: [{id: Math.floor(Math.random()*1000), firstName, lastName, qualification, dateOfBirth, maritalStatus, selectedRadio},...data]})
         } 
     }
 

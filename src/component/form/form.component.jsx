@@ -31,8 +31,8 @@ export const Form = () => {
                             <input type='date' className='form-input' name='dateOfBirth' onChange={(e) => value.handleChange(e, 'dateOfBirth')} value={value.dateOfBirth} />
                         </div>
                         <div className='dropdown'>
-                            <label className='form-input-label'>Martial Status:</label>
-                            <select className='form-input' name='martialStatus' onChange={(e) => value.handleChange(e, 'martialStatus')} value={value.martialStatus}>
+                            <label className='form-input-label'>Marital Status:</label>
+                            <select className='form-input' name='maritalStatus' onChange={(e) => value.handleChange(e, 'martialStatus')} value={value.martialStatus}>
                                 <option value='' disabled>--Select--</option>
                                 <option value='Married'>Married</option>
                                 <option value='UnMarried'>UnMarried</option>

@@ -30,7 +30,7 @@ export default class FormInput extends Component {
                                             <span className='items'>{input.lastName}</span>
                                             <span className='items'>{input.qualification}</span>
                                             <span className='items'>{input.dateOfBirth}</span>
-                                            <span className='items'>{input.martialStatus}</span>
+                                            <span className='items'>{input.maritalStatus}</span>
                                             <span className='items'>{input.selectedRadio}</span>
                                             <span className='items-btn'><button className='btn' onClick={() => value.editInput(input.id)}>Edit</button>
                                             <button className='btn' onClick={() => value.deleteInput(input.id)}>Delete</button></span>
